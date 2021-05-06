@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>極楽亭</title>
   </head>
   <body>
