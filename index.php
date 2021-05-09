@@ -19,7 +19,7 @@
       <div class="feature-inner">
         <div class="feature-inner-content" data-aos="fade-up">
           <div class="feature-inner-content-visual">
-            <img src="image/feature-item01.png" alt="ホテル画像" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/feature-item01.png" alt="ホテル画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
           <div class="feature-inner-content-copy">
@@ -39,7 +39,7 @@
         <!-- /.feature-inner-content -->
         <div class="feature-inner-content even" data-aos="fade-down">
           <div class="feature-inner-content-visual  even-visual">
-            <img src="image/feature-item02.png" alt="料理画像" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/feature-item02.png" alt="料理画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
           <div class="feature-inner-content-copy even-copy">
@@ -62,7 +62,7 @@
         <!-- /.feature-inner-content -->
         <div class="feature-inner-content" data-aos="fade-up">
           <div class="feature-inner-content-visual">
-            <img src="image/feature-item03.png" alt="温泉画像" />
+            <img src="<?php echo get_template_directory_uri(); ?>/image/feature-item03.png" alt="温泉画像" />
           </div>
           <!-- /.feature-inner-content-visual -->
           <div class="feature-inner-content-copy">
@@ -92,35 +92,35 @@
       <div class="swiper-container" data-aos="fade-up">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="image/rec-plan01.png" alt="温泉画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan01.png" alt="温泉画像">
             <div class="swiper-slide-txt">
               <h3 class="swiper-slide-txt-title">温泉で湯ったりポカポカプラン＜朝食選択可＞</h3><!-- /.swiper-slide-txt-title -->
               <p class="swiper-slide-txt-price">お値段：<span>6000円</span> / 人</p><!-- /.wiper-slide-txt-price -->
             </div><!-- /.swiper-slide-txt -->
           </div><!-- /.swiper-slide -->
           <div class="swiper-slide">
-            <img src="image/rec-plan02.png" alt="スイーツ画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan02.png" alt="スイーツ画像">
             <div class="swiper-slide-txt">
               <h3 class="swiper-slide-txt-title">【ケーキセット】選べるケーキお飲物のセット！</h3><!-- /.swiper-slide-txt-title -->
               <p class="swiper-slide-txt-price">お値段：<span>2000円</span> / 人</p><!-- /.wiper-slide-txt-price -->
             </div><!-- /.swiper-slide-txt -->
           </div><!-- /.swiper-slide -->
           <div class="swiper-slide">
-            <img src="image/rec-plan03.png" alt="ドリンク画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan03.png" alt="ドリンク画像">
             <div class="swiper-slide-txt">
               <h3 class="swiper-slide-txt-title">バータイム「2DRINKSプラン」選べるドリンク2杯におつまみが付いたプラン</h3><!-- /.swiper-slide-txt-title -->
               <p class="swiper-slide-txt-price">お値段：<span>8000円</span> / 人</p><!-- /.wiper-slide-txt-price -->
             </div><!-- /.swiper-slide-txt -->
           </div><!-- /.swiper-slide -->
           <div class="swiper-slide">
-            <img src="image/rec-plan04.png" alt="フルーツ画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan04.png" alt="フルーツ画像">
             <div class="swiper-slide-txt">
               <h3 class="swiper-slide-txt-title">【リモート宴会プラン】京の極楽からシェフ厳選メニューをご提供！</h3><!-- /.swiper-slide-txt-title -->
               <p class="swiper-slide-txt-price">お値段：<span>6000円</span> / 人</p><!-- /.wiper-slide-txt-price -->
             </div><!-- /.swiper-slide-txt -->
           </div><!-- /.swiper-slide -->
           <div class="swiper-slide">
-            <img src="image/rec-plan05.png" alt="会席画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/rec-plan05.png" alt="会席画像">
             <div class="swiper-slide-txt">
               <h3 class="swiper-slide-txt-title">【数量限定】季節の会席とミニボトルのドリンク付きプラン</h3><!-- /.swiper-slide-txt-title -->
               <p class="swiper-slide-txt-price">お値段：<span>8000円</span> / 人</p><!-- /.wiper-slide-txt-price -->
@@ -130,17 +130,17 @@
       </div><!-- /.plan-swiper-container -->
       <div class="plan-card-box">
         <div class="card" data-aos="fade-up">
-          <img src="image/service-item01.png" alt="価格イメージ" class="card-visual"></img><!-- /.card-visual -->
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service-item01.png" alt="価格イメージ" class="card-visual"></img><!-- /.card-visual -->
           <h3 class="card-title">最低価格保証</h3><!-- /.card-title -->
           <p class="card-copy">極楽亭の公式ホームページでのご宿泊料金は、どの予約サイトよりも最低価格であることをお約束いたします。</p><!-- /.card-copy -->
         </div><!-- /.card -->
         <div class="card" data-aos="fade-up">
-          <img src="image/service-item02.png" alt="wifi画像" class="card-visual"></img><!-- /.card-visual -->
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service-item02.png" alt="wifi画像" class="card-visual"></img><!-- /.card-visual -->
           <h3 class="card-title">全客室Wi-Fi無料</h3><!-- /.card-title -->
           <p class="card-copy">ロビー・客室フロアに無線LANアクセスポイントを設置し、各客室内でもWi-Fi接続によるインターネットを利用できる環境を構築しています。</p><!-- /.card-copy -->
         </div><!-- /.card -->
         <div class="card" data-aos="fade-up">
-          <img src="image/service-item03.png" alt="会員画像" class="card-visual"></img><!-- /.card-visual -->
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service-item03.png" alt="会員画像" class="card-visual"></img><!-- /.card-visual -->
           <h3 class="card-title">会員限定料金</h3><!-- /.card-title -->
           <p class="card-copy">会員の方は、会員料金でご宿泊いただけるほか、オンラインクーポンなどの限定メニューもご利用いただけます。</p><!-- /.card-copy -->
         </div><!-- /.card -->
