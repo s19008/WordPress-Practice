@@ -14,8 +14,6 @@
         <p class="footer-inner-copyright">Copyright (c) 2021 <?php bloginfo( 'name' ); ?> All Rights Reserved.</p><!-- /.footer-inner-copyright -->
       </div><!-- /.footer-inner -->
     </footer><!-- /.footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <?php wp_footer(); ?>
   </body>
 </html>

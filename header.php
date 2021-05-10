@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="祇園の中心に佇む京の極楽浄土">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <title><?php wp_title( '|', true, 'right' );?><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
