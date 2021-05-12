@@ -184,7 +184,7 @@ body {
   background-image: url("image/top-bg.png");
   background-size: cover;
   background-position: center;
-  margin-top: 94px;
+  margin-top: 60px;
   position: relative;
 }
 
@@ -616,7 +616,6 @@ body {
 
 .blog {
   text-align: center;
-  margin-top: 80px;
 }
 
 .blog-title {
