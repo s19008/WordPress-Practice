@@ -1,7 +1,7 @@
 /*
-Theme Name: Practice
+Theme Name: Gokurakutei
 Author: YO
-Description: WordPress練習用
+Description: 架空の温泉旅館のホームページです
 Version: 5.7.1
 */
 @charset "UTF-8";
@@ -155,7 +155,6 @@ body {
     display: block;
   }
 }
-
 .header-sp-nav {
   display: none;
   width: 100%;
@@ -214,6 +213,24 @@ body {
   }
 }
 
+.blog-top {
+  width: 100%;
+  height: 296px;
+  background-image: url("image/street-409993_1920.png");
+  background-size: cover;
+  margin-top: 60px;
+}
+.breadcrumbs {
+  max-width: 1160px;
+  margin: 0 auto;
+  color: #FFF;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.breadcrumbs a {
+  color: #FFF;
+  font-size: 20px;
+}
 .feature {
   width: 100%;
   padding-top: 61px;

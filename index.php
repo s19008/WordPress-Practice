@@ -154,23 +154,23 @@
       <dl class="blog-table">
         <div class="line" data-aos="fade-down">
           <dt>お知らせ</dt>
-          <dd>2021年5月より、極楽亭に新たに宴会場「風の間」が新設されました。</dd>
+          <dd><a href="">2021年5月より、極楽亭に新たに宴会場「風の間」が新設されました。</a></dd>
         </div>
         <div class="line" data-aos="fade-down">
           <dt>お知らせ</dt>
-          <dd>2021年5月より、極楽亭の別館が開館します！こちらも予約を随時、受付けております。</dd>
+          <dd><a href="">2021年5月より、極楽亭の別館が開館します！こちらも予約を随時、受付けております。</a></dd>
         </div>
         <div class="line" data-aos="fade-down">
           <dt>採用</dt>
-          <dd>2021年度の採用募集を開始いたしました。一緒に極楽亭を盛り上げていきませんか？</dd>
+          <dd><a href="">2021年度の採用募集を開始いたしました。一緒に極楽亭を盛り上げていきませんか？</a></dd>
         </div>
         <div class="line" data-aos="fade-down">
           <dt>お知らせ</dt>
-          <dd>2021年2月20日、極楽亭の創業50年を迎えました。</dd>
+          <dd><a href="">2021年2月20日、極楽亭の創業50年を迎えました。</a></dd>
         </div>
         <div class="line" data-aos="fade-down">
           <dt>イベント</dt>
-          <dd>2020年12月25日までクリスマスフェア開催中です！出来立てのお料理を絶景とともにお愉しみいただけます。</dd>
+          <dd><a href="">2020年12月25日までクリスマスフェア開催中です！出来立てのお料理を絶景とともにお愉しみいただけます。</a></dd>
         </div>
       </dl><!-- /.blog-table -->
       <a href="" class="more-btn" data-aos="fade-down">もっと見る</a><!-- /.more-btn -->
