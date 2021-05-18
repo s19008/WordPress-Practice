@@ -13,4 +13,8 @@ Template Name: ブログページ
         bcn_display();
     }?>
 </div>
+<div class="blog-title">
+    <h2>ブログ</h2>    
+    <p>Blog</p>
+</div><!-- /.blog-title -->
 <?php get_footer(); ?>
