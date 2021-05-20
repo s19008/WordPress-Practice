@@ -152,7 +152,22 @@
         <p>Blog</p>
       </div><!-- /.blog-title -->
       <dl class="blog-table">
-      
+        <?php 
+        $query_args = array(
+          'post_status' => 'publish',
+          'post_type' => 'post',
+          'order' => 'DESC',
+          'posts_per_page' => 10
+        );
+        $the_query = new WP_Query( $query_args );
+        if ( $the_query->have_posts() ) :
+          while ( $the_query->have_posts() ): 
+            $the_query->the_post();
+            $link = get_permalink($post->ID);
+            $title = get_the_title($post->ID);
+          endwhile;
+        endif;
+        ?>
       </dl><!-- /.blog-table -->
       <a href="" class="more-btn" data-aos="fade-down">もっと見る</a><!-- /.more-btn -->
     </section><!-- /.blog -->
