@@ -639,6 +639,7 @@ body {
 
 .blog {
   text-align: center;
+  margin-top: 60px;
 }
 
 .blog-title {
@@ -696,6 +697,10 @@ body {
   margin-right: 22px;
 }
 
+.blog-table .line dd a {
+  color: #FFF;
+  font-size: 24px;
+}
 @media (max-width: 768px) {
   .blog-table .line dt {
     max-width: 75px;
