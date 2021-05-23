@@ -161,12 +161,19 @@
       //記事がある場合
       while ($the_query->have_posts()) :
         $the_query->the_post();
-        $link = get_permalink($post->ID);//記事のurl
-        $title = get_the_title($post->ID);//記事タイトル
+        $link = get_permalink($post->ID); //記事のurl
+        $title = get_the_title($post->ID); //記事タイトル
     ?>
         <div class="line" data-aos="fade-down">
-          <dt>お知らせ</dt>
-          <dd><a href="<?php echo $link;?>"><?php echo $title;?></a></dd>
+          <dt>
+            <?php if (!is_category() && has_category()) : ?>
+              <?php
+              $postcat = get_the_category();
+              echo $postcat[0]->name;
+              ?>
+            <?php endif; ?>
+          </dt>
+          <dd><a href="<?php echo $link; ?>"><?php echo $title; ?></a></dd>
         </div>
     <?php
       endwhile;
