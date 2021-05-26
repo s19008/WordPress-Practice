@@ -64,7 +64,7 @@ Template Name: ブログ一覧
                         <!--タイトル-->
                         <h2><?php the_title(); ?></h2>
                         <!--抜粋-->
-                        <?php the_excerpt(); ?>
+                        <p><?php the_excerpt(); ?></p>
                     </div>
                     <!--end text-->
                 </a>
