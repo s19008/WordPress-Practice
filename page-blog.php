@@ -9,11 +9,9 @@ Template Name: ブログ一覧
 <div class="blog-top">
 </div><!-- /.blog-top -->
 
-<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-    <?php if (function_exists('bcn_display')) {
-        bcn_display();
-    } ?>
-</div>
+<?php 
+breadcrumb($postID);
+?>
 
 <div class="blog-title">
     <h2> <?php the_title(); ?></h2>
@@ -72,7 +70,7 @@ Template Name: ブログ一覧
     <?php
         endwhile;
     else :
-
+        echo "<div>申し訳ございません。ただいま記事を準備中です</div>";
     endif;
     wp_reset_postdata();
     ?>

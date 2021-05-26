@@ -34,3 +34,19 @@ function my_script_init()
     wp_enqueue_script('main-js', get_template_directory_uri() . '/javascript/script.js', array('my-jquery', 'slick-js', 'aos-js'), filemtime( get_theme_file_path( '/javascript/script.js' ) ), true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
+
+// パンくずリスト //
+function breadcrumb($postID) {
+    $title = get_the_title($postID);
+    echo '<ol class="breadcrumb-list">';
+    if ( is_single() ) {
+        echo '<li class="breadcrumb-item"><a href="/">ホーム</a></li>';
+        echo '<li class="breadcrumb-item"><a href="/blog/">ブログ</a></li>';
+        echo '<li class="breadcrumb-item" aria-current="page">'.$title.'</li>';
+    }
+    else if( is_page() ) {
+        echo '<li class="breadcrumb-item"><a href="/">ホーム</a></li>';
+        echo '<li class="breadcrumb-item" aria-current="page">'.$title.'</li>';
+    }
+    echo "</ol>";
+}
