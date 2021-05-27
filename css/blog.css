@@ -5,7 +5,7 @@
   padding-top: 60px;
 }
 
-.blog-content a {
+.blog-content article a {
   width: 100%;
   text-decoration: none;
   display: -webkit-box;
@@ -15,12 +15,12 @@
   margin-bottom: 50px;
 }
 
-.blog-content a .img-wrap {
+.blog-content article a .img-wrap {
   position: relative;
   margin-right: 32px;
 }
 
-.blog-content a .img-wrap .cat-data {
+.blog-content article a .img-wrap .cat-data {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,18 +36,18 @@
   margin-right: 22px;
 }
 
-.blog-content a .text {
+.blog-content article a .text {
   color: #fff;
 }
 
-.blog-content a .text h2 {
+.blog-content article a .text h2 {
   font-size: 28px;
   line-height: 26px;
   text-decoration: underline;
   margin: 15px 0 20px 0;
 }
 
-.blog-content a .text p {
+.blog-content article a .text p {
   font-size: 24px;
   line-height: 26px;
 }

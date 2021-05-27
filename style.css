@@ -233,6 +233,7 @@ body {
 .breadcrumb-item a {
   color: #FFF;
   font-size: 20px;
+  padding-right: 5px;
 }
 .feature {
   width: 100%;
