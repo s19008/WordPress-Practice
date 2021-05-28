@@ -43,5 +43,28 @@
             }
         }
     }
-    
+    .pnavi {
+        padding: 26px 0 120px 0;
+        text-align: center;
+    }
+    .page-numbers {
+        margin-right: 20px;
+        padding: 17px 21px;
+        color: #FFF;
+        border: 2px solid #B8860B;
+        text-decoration: none;
+    }
+    .current {
+        padding: 17px 21px;
+        background-color: #B8860B;
+    }
+    .prev, .next {
+        display: none;
+    }
+    .dots {
+        padding: 0;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
 }

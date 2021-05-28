@@ -51,4 +51,34 @@
   font-size: 24px;
   line-height: 26px;
 }
+
+.blog-content .pnavi {
+  padding: 26px 0 120px 0;
+  text-align: center;
+}
+
+.blog-content .page-numbers {
+  margin-right: 20px;
+  padding: 17px 21px;
+  color: #FFF;
+  border: 2px solid #B8860B;
+  text-decoration: none;
+}
+
+.blog-content .current {
+  padding: 17px 21px;
+  background-color: #B8860B;
+}
+
+.blog-content .prev, .blog-content .next {
+  display: none;
+}
+
+.blog-content .dots {
+  padding: 0;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=blog.css.map */
