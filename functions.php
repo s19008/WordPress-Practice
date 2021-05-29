@@ -27,7 +27,8 @@ function my_script_init()
     wp_enqueue_style('slick-theme', get_template_directory_uri() . '/slick/slick-theme.css', array(), '1.0.0', 'all');
     wp_enqueue_style('aos-css', '//unpkg.com/aos@2.3.1/dist/aos.css', array());
     wp_enqueue_style('blog-css', get_template_directory_uri() . '/css/blog.css', array(), '1.0.0', 'all');
-    wp_enqueue_style('main', get_template_directory_uri() . '/style.css', array('reset', 'slick', 'slick-theme', 'aos-css', 'blog-css'), 'all');
+    wp_enqueue_style('single-css', get_template_directory_uri() . '/css/single.css', array(), '1.0.0.', 'all');
+    wp_enqueue_style('main', get_template_directory_uri() . '/style.css', array('reset', 'slick', 'slick-theme', 'aos-css', 'blog-css', 'single-css'), 'all');
     wp_enqueue_script('my-jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), NULL, true);
     wp_enqueue_script('slick-js', get_template_directory_uri() . '/slick/slick.min.js', array('my-jquery'), NULL, true);
     wp_enqueue_script('aos-js', '//unpkg.com/aos@2.3.1/dist/aos.js', array('my-jquery'), NULL, true);
@@ -50,3 +51,15 @@ function breadcrumb($postID) {
     }
     echo "</ol>";
 }
+
+function my_theme_widgets_init() {
+    register_sidebar( array(
+        'name' => 'サイドバー',
+        'id' => 'main-sidebar',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="widget-title">',
+        'after_title' => '</div>',
+    ) );
+}
+add_action( 'widgets_init', 'my_theme_widgets_init' );
