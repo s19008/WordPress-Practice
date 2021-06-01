@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-<?php
-breadcrumb($postID);
-?>
+<div class="bread-crumb">
+    <?php
+    breadcrumb($postID);
+    ?>
+</div><!-- /.breadcrumb -->
 
 <div class="single-content">
     <?php if (have_posts()) :
@@ -22,32 +24,33 @@ breadcrumb($postID);
             };
     ?>
             <article <?php post_class('article-list'); ?>>
-                <div class="img-wrap">
-                    <!--画像を追加-->
-                        <img src="<?php echo $thumbnail;?>" alt="<?php echo $alt;?>" />
-                    <!--カテゴリ-->
-                    <?php if (!is_category() && has_category()) : ?>
-                        <span class="cat-data">
-                            <?php
-                            echo $category;
-                            ?>
-                        </span>
-                    <?php endif; ?>
-                </div>
-                <!--end img-warp-->
+                <!--カテゴリ-->
+                <?php if (!is_category() && has_category()) : ?>
+                    <span class="cat-data">
+                        <?php
+                        echo $category;
+                        ?>
+                    </span>
+                <?php endif; ?>
                 <div class="text">
+                    <!--タイトル-->
+                    <h2 class="article-title"><?php echo $title; ?></h2>
+                    <div class="a2a_kit">
+                        <a class="a2a_button_twitter_tweet" data-lang="en"></a>
+                    </div>
                     <span class="article-date">
-                        <time datetime="<?php echo get_the_date('Y-m-d'); ?>">
-                            <?php echo get_the_date(); ?>
+                        <time datetime="<?php echo $data; ?>">
+                            <?php echo $data; ?>更新
                         </time>
                     </span>
-                    <!--タイトル-->
-                    <h2><?php the_title(); ?></h2>
-                    <!--抜粋-->
-                    <p><?php the_excerpt(); ?></p>
-                    <p><?php the_content(); ?></p>
                 </div>
                 <!--end text-->
+                <div class="img-wrap">
+                    <!--画像を追加-->
+                    <img src="<?php echo $thumbnail; ?>" alt="<?php echo $alt; ?>" />
+                </div>
+                <!--end img-warp-->
+                <p class="article-content"><?php echo $content; ?></p>
             </article>
     <?php
         endwhile;
@@ -56,4 +59,5 @@ breadcrumb($postID);
     endif;
     ?>
 </div>
+
 <?php get_footer(); ?>

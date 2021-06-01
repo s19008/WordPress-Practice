@@ -42,8 +42,8 @@ function breadcrumb($postID) {
     echo '<ol class="breadcrumb-list">';
     if ( is_single() ) {
         echo '<li class="breadcrumb-item"><a href="/">ホーム</a></li>';
-        echo '<li class="breadcrumb-item"><a href="/blog/"> > ブログ</a></li>';
-        echo '<li class="breadcrumb-item" aria-current="page">'.$title.'</li>';
+        echo '<li class="breadcrumb-item"> > <a href="/blog/">ブログ一覧</a></li>';
+        echo '<li class="breadcrumb-item" aria-current="page"> > '.$title.'</li>';
     }
     else if( is_page() ) {
         echo '<li class="breadcrumb-item"><a href="/">ホーム</a></li>';
