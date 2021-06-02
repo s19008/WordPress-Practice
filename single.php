@@ -55,9 +55,39 @@
     <?php
         endwhile;
     else :
-        echo "<div>申し訳ございません。ただいま記事を準備中です</div>";
+        echo '申し訳ございません。ただいま記事を準備中です';
     endif;
     ?>
+
+    <aside id="sidebar" class="sidebar">
+        <?php
+        $query_args = array(
+            'post-status' => 'publish',
+            'post_type' => 'post',
+            'order' => 'DESC',
+            'posts_per_page' => 5,
+            'category_name' => $categoryList
+        );
+        $the_query = new WP_Query($query_args);
+        if ($the_query->have_posts()) : ?>
+
+
+            <?php
+            while ($the_query->have_posts()) :
+                $the_query->the_post();
+                $link = get_permalink($post->ID);
+                $title = get_the_title($post->ID);
+                $thumbnail = (get_the_post_thumbnail_url($post->ID, 'medium')) ? get_the_post_thumbnail_url($post->ID, 'medium') : get_template_directory_uri() . $NO_IMAGE_URL;
+            ?>
+            
+        <?php endwhile;
+        else :
+            echo "<div>申し訳ございません。ただいま記事を準備中です</div>";
+        endif;
+        wp_reset_query();
+        ?>
+    </aside>
 </div>
+
 
 <?php get_footer(); ?>

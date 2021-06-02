@@ -10,6 +10,12 @@
 }
 
 .single-content {
+  max-width: 1366px;
+  width: 100%;
+  position: relative;
+}
+
+.single-content article {
   max-width: 840px;
   width: 100%;
   margin-left: 110px;
@@ -36,15 +42,12 @@
   display: block;
   font-size: 24px;
   text-align: right;
+  margin-bottom: 30px;
 }
 
 .single-content article .text .article-title {
   font-size: 36px;
   margin-bottom: 45px;
-}
-
-.single-content article .text .a2a_kit .a2a_button_twitter_tweet {
-  font-size: 40px;
 }
 
 .single-content article .img-wrap {
@@ -53,6 +56,17 @@
 }
 
 .single-content article .img-wrap img {
+  width: 100%;
+}
+
+.single-content article .article-content {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 165px;
+}
+
+.single-content .sidebar {
+  max-width: 270px;
   width: 100%;
 }
 /*# sourceMappingURL=single.css.map */

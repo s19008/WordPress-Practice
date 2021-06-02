@@ -9,10 +9,13 @@
 }
 
 .single-content {
-    max-width: 840px;
+    max-width: 1366px;
     width: 100%;
-    margin-left: 110px;
+    position: relative;
     article {
+        max-width: 840px;
+        width: 100%;
+        margin-left: 110px;
         .cat-data {
             display: inline-block;
             max-width: 120px;
@@ -31,17 +34,11 @@
                 display: block;
                 font-size: 24px;
                 text-align: right;
+                margin-bottom: 30px;
             }
             .article-title {
                 font-size: 36px;
                 margin-bottom: 45px;
-            }
-            .a2a_kit {
-                .a2a_button_twitter_tweet {
-                    font-size: 40px;
-                }
-            }
-            .article-content {
             }
         }
         .img-wrap {
@@ -51,5 +48,15 @@
                 width: 100%;
             }
         }
+        .article-content {
+            font-size: 24px;
+            line-height: 26px;
+            margin-bottom: 165px;
+        }
+    }
+    .sidebar {
+        max-width: 270px;
+        width: 100%;
+        
     }
 }

@@ -52,14 +52,4 @@ function breadcrumb($postID) {
     echo "</ol>";
 }
 
-function my_theme_widgets_init() {
-    register_sidebar( array(
-        'name' => 'サイドバー',
-        'id' => 'main-sidebar',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<div class="widget-title">',
-        'after_title' => '</div>',
-    ) );
-}
-add_action( 'widgets_init', 'my_theme_widgets_init' );
+
