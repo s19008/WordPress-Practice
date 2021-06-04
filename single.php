@@ -14,7 +14,7 @@
             $content = get_the_content();
             $category = get_the_category()[0]->name;
             $data = get_the_modified_date('Y-m-d', $post->ID);
-            $thumbnail = (get_the_post_thumbnail_url($post->ID, 'medium')) ? get_the_post_thumbnail_url($post->ID, 'medium') : get_template_directory_uri() . $NO_IMAGE_URL;
+            $thumbnail = (get_the_post_thumbnail_url($post->ID, 'thumbnail')) ? get_the_post_thumbnail_url($post->ID, 'thumbnail') : get_template_directory_uri() . $NO_IMAGE_URL;
             $thumbID = get_post_thumbnail_id($postID);
             $alt = get_post_meta($thumbID, '_wp_attachment_image_alt', true);
             $categorys = get_the_category();
@@ -23,7 +23,7 @@
                 $categoryList = ($categoryList) ? $categoryList . ',' . $val->slug : $categoryList . $val->slug;
             };
     ?>
-            <article <?php post_class('article-list'); ?>>
+            <article class="main-article" <?php post_class('article-list'); ?>>
                 <!--カテゴリ-->
                 <?php if (!is_category() && has_category()) : ?>
                     <span class="cat-data">
@@ -70,22 +70,64 @@
         );
         $the_query = new WP_Query($query_args);
         if ($the_query->have_posts()) : ?>
-
-
+            <h2 class="title first">関連記事</h2><!-- /.title -->
             <?php
             while ($the_query->have_posts()) :
                 $the_query->the_post();
                 $link = get_permalink($post->ID);
                 $title = get_the_title($post->ID);
+                $thumbID = get_post_thumbnail_id($postID);
+                $alt = get_post_meta($thumbID, '_wp_attachment_image_alt', true);
                 $thumbnail = (get_the_post_thumbnail_url($post->ID, 'medium')) ? get_the_post_thumbnail_url($post->ID, 'medium') : get_template_directory_uri() . $NO_IMAGE_URL;
             ?>
-            
+                <article class="sidebar-article">
+                    <a href="<?php echo $link; ?>">
+                        <img src="<?php echo $thumbnail; ?>" alt="<?php echo $alt; ?>" class="article-visual">
+                        <h3 class="article-title"><?php echo $title; ?></h3><!-- /.article-title -->
+                    </a>
+                </article>
+
         <?php endwhile;
         else :
             echo "<div>申し訳ございません。ただいま記事を準備中です</div>";
         endif;
         wp_reset_query();
         ?>
+
+        <?php
+        $query_args = array(
+            'post-status' => 'publish',
+            'post_type' => 'post',
+            'order' => 'DESC',
+            'posts_per_page' => 5,
+            'tag' => 'recommend'
+        );
+        $the_query = new WP_Query($query_args);
+        if ($the_query->have_posts()) : ?>
+            <h2 class="title">おすすめ記事</h2><!-- /.title -->
+            <?php
+            while ($the_query->have_posts()) :
+                $the_query->the_post();
+                $link = get_permalink($post->ID);
+                $title = get_the_title($post->ID);
+                $thumbID = get_post_thumbnail_id($postID);
+                $alt = get_post_meta($thumbID, '_wp_attachment_image_alt', true);
+                $thumbnail = (get_the_post_thumbnail_url($post->ID, 'medium')) ? get_the_post_thumbnail_url($post->ID, 'medium') : get_template_directory_uri() . $NO_IMAGE_URL;
+            ?>
+                <article class="sidebar-article">
+                    <a href="<?php echo $link; ?>">
+                        <img src="<?php echo $thumbnail; ?>" alt="<?php echo $alt; ?>" class="article-visual">
+                        <h3 class="article-title"><?php echo $title; ?></h3><!-- /.article-title -->
+                    </a>
+                </article>
+
+        <?php endwhile;
+        else :
+            echo "<div>申し訳ございません。ただいま記事を準備中です</div>";
+        endif;
+        wp_reset_query();
+        ?>
+
     </aside>
 </div>
 
