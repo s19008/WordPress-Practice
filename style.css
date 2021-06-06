@@ -224,14 +224,35 @@ body {
   border: 0.5px solid #FFF;
   margin-bottom: 61px;
 }
+.acceptance a{
+  color: #FFF;
+}
 .check-box {
   color: #FFF;
+  margin: 33px 0 46px 0;
+}
+.check-box input {
+  width: 20px;
+  height: 20px;
 }
 .entry_btn {
   text-align: center;
+  margin-bottom: 105px;
+}
+.entry_btn input {
+  padding: 18px 65px;
+  background-color: #B8860B;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  border: #000;
 }
 .ns-box {
+  text-align: center;
   color: #FFF;
+}
+.back {
+  text-align: center;
 }
 .mv {
   width: 100%;
