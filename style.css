@@ -251,8 +251,20 @@ body {
   text-align: center;
   color: #FFF;
 }
-.back {
+.complete-inner {
   text-align: center;
+}
+.complete-text {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 35px;
+  padding: 71px 0 50px 0;
+}
+.back-btn {
+  margin-bottom: 113px;
+}
+.back-btn a {
+  color: #FFF;
 }
 .mv {
   width: 100%;
@@ -284,7 +296,7 @@ body {
   }
 }
 
-.blog-top, .inquery-top{
+.blog-top, .inquery-top, .complete-top {
   width: 100%;
   height: 296px;
   background-image: url("image/street-409993_1920.png");
