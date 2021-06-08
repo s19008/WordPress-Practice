@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="mv">
+<div class="mv" id="mv">
   <div class="mv-copy">
     <h2>
       祇園の中心に佇む<br />
@@ -10,7 +10,7 @@
   <!-- /.mv-inner -->
 </div>
 <!-- /.mv -->
-<section class="feature">
+<section class="feature" id="feature">
   <div class="feature-title" data-aos="fade-up">
     <h2>本館の特徴</h2>
     <p>Feature</p>
@@ -81,7 +81,7 @@
   <!-- /.feature-inner -->
 </section>
 <!-- /.feature -->
-<section class="plan">
+<section class="plan" id="plan">
   <div class="plan-title" data-aos="fade-up">
     <h2>おすすめプラン</h2>
     <p>Recommend Plan</p>
@@ -143,7 +143,7 @@
     </div><!-- /.card -->
   </div><!-- /.plan-card -->
 </section><!-- /.plan -->
-<section class="blog">
+<section class="blog" id="blog">
   <div class="blog-title" data-aos="fade-down">
     <h2>ブログ</h2>
     <p>Blog</p>
@@ -188,7 +188,7 @@
   </dl><!-- /.blog-table -->
   <a href="/blog/" class="more-btn" data-aos="fade-down">もっと見る</a><!-- /.more-btn -->
 </section><!-- /.blog -->
-<section class="faq">
+<section class="faq" id="faq">
   <div class="faq-title" data-aos="fade-down">
     <h2>よくある質問</h2>
     <p>FAQ</p>
@@ -207,4 +207,4 @@
   </div><!-- /.faq-inner -->
 </section><!-- /.faq -->
 
-<?php get_footer();
+<?php get_footer(); ?>
