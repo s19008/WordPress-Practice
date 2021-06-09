@@ -303,6 +303,12 @@ body {
   background-size: cover;
   margin-top: 60px;
 }
+@media (max-width: 782px) {
+  .blog-top, .inquery-top, .complete-top {
+    margin-top: 46px;
+  }
+}
+
 .breadcrumb-list {
   max-width: 1160px;
   margin: 0 auto;

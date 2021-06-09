@@ -1,9 +1,10 @@
 .bread-crumb {
+  width: 100%;
   padding: 94px 0 50px 0;
 }
 
 .bread-crumb .breadcrumb-list {
-  max-width: 1200px;
+  max-width: 841px;
   width: 100%;
   margin-left: 110px;
   padding: 0;
@@ -18,6 +19,13 @@
   max-width: 840px;
   width: 100%;
   margin: 0 56px 0 110px;
+}
+
+@media (max-width: 1280px) {
+  .single-content .main-article {
+    display: block;
+    max-width: 1280px;
+  }
 }
 
 .single-content .main-article .cat-data {
@@ -45,6 +53,8 @@
 }
 
 .single-content .main-article .text .article-title {
+  max-width: 840px;
+  width: 100%;
   font-size: 36px;
   margin-bottom: 45px;
 }
@@ -69,6 +79,12 @@
   max-width: 270px;
   width: 100%;
   vertical-align: top;
+}
+
+@media (max-width: 1280px) {
+  .single-content .sidebar {
+    display: block;
+  }
 }
 
 .single-content .sidebar .title {

@@ -8,11 +8,11 @@ Template Name: ブログ一覧
 
 <div class="blog-top">
 </div><!-- /.blog-top -->
-
-<?php
-breadcrumb($postID);
-?>
-
+<div class="blog-breadcrumb">
+    <?php
+    breadcrumb($postID);
+    ?>
+</div><!-- /.blog-breadcrumb -->
 <div class="blog-title">
     <h2> <?php the_title(); ?></h2>
     <p>Blog</p>

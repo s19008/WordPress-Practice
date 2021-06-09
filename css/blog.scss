@@ -1,17 +1,37 @@
+@import "./general";
+.blog-breadcrumb {
+    .breadcrumb-list {
+        @include tab {
+            padding: 20px 20px 28px 20px;
+        }
+    }
+}
 .blog-content {
     max-width: 1160px;
     width: 100%;
     margin: 0 auto;
     padding-top: 60px;
+    @include tab {
+        padding: 60px 20px 0 20px;
+    }
     article {
         a {
             width: 100%;
             text-decoration: none;
             display: flex;
             margin-bottom: 50px;
+            @include sp2 {
+                flex-direction: column;
+                align-items: center;
+            }
             .img-wrap {
                 position: relative;
                 margin-right: 32px;
+                @include sp2 {
+                    margin: 0;
+                }
+                img {
+                }
                 .cat-data {
                     position: absolute;
                     top: 0;
@@ -30,15 +50,34 @@
             }
             .text {
                 color: #fff;
+                @include sp2 {
+                    margin-top: 50px;
+                    padding: 20px;
+                }
+                @include sp {
+                    padding: 8px;
+                }
                 h2 {
                     font-size: 28px;
                     line-height: 26px;
                     text-decoration: underline;
                     margin: 15px 0 20px 0;
+                    @include tab {
+                        font-size: 24px;
+                    }
+                    @include sp2 {
+                        font-size: 22px;
+                    }
                 }
                 p {
                     font-size: 24px;
                     line-height: 26px;
+                    @include tab {
+                        font-size: 18px;
+                    }
+                    @include sp2 {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -50,15 +89,23 @@
     .page-numbers {
         margin-right: 20px;
         padding: 17px 21px;
-        color: #FFF;
-        border: 2px solid #B8860B;
+        color: #fff;
+        border: 2px solid #b8860b;
         text-decoration: none;
+        @include sp2 {
+            margin-right: 10px;
+            padding: 15px 19px;
+        }
     }
     .current {
         padding: 17px 21px;
-        background-color: #B8860B;
+        background-color: #b8860b;
+        @include sp2 {
+            padding: 15px 19px;
+        }
     }
-    .prev, .next {
+    .prev,
+    .next {
         display: none;
     }
     .dots {
