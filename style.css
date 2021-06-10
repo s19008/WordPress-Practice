@@ -176,10 +176,14 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.inquery-breadcrumb {
+  padding: 0 20px;
+}
 .space {
   max-width: 986px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .space h1 {
   font-size: 30px;

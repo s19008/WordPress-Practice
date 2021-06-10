@@ -8,9 +8,11 @@ Template Name: お問い合わせ
 
 <div class="inquery-top">
 </div><!-- /.inquery-top -->
-<?php
-breadcrumb($postID);
-?>
+<div class="inquery-breadcrumb">
+    <?php
+    breadcrumb($postID);
+    ?>
+</div><!-- /.inquery-breadcrumb -->
 <div class="space">
     <?php if (have_posts()) :
         while (have_posts()) : ?>
