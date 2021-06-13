@@ -228,6 +228,11 @@ body {
   border: 0.5px solid #FFF;
   margin-bottom: 61px;
 }
+@media (max-width: 400px) {
+  .mwform-tel-field input[name^="電話"] {
+    padding: 5px 6px;
+  }
+}
 .acceptance a{
   color: #FFF;
 }
